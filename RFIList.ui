@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RFIList</class>
+ <widget class="QMainWindow" name="RFIList">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Agency FB</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>RFI Collector</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>30</width>
+    <height>30</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="listTable">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>1920</width>
+      <height>930</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1920</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="midLineWidth">
+     <number>1</number>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="tabKeyNavigation">
+     <bool>false</bool>
+    </property>
+    <property name="showDropIndicator" stdset="0">
+     <bool>false</bool>
+    </property>
+    <property name="dragEnabled">
+     <bool>true</bool>
+    </property>
+    <property name="dragDropOverwriteMode">
+     <bool>false</bool>
+    </property>
+    <property name="dragDropMode">
+     <enum>QAbstractItemView::DragOnly</enum>
+    </property>
+    <property name="defaultDropAction">
+     <enum>Qt::IgnoreAction</enum>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="gridStyle">
+     <enum>Qt::SolidLine</enum>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>100</number>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>50</number>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>50</number>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>공개기관</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>공고URL</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>등록번호</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>참조번호</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>품명(사업명)</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>수요기관</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>기관구분</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>사전규격공개일</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>의견등록마감일</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>배정예산</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>세부품번</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>세부품명</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>담당자명</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>연락처</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>파일</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>삭제</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="homeButton">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>980</y>
+      <width>300</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Home 화면</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="moreLessTab">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1920</width>
+      <height>950</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="moreTab">
+     <attribute name="title">
+      <string>1억원 이상</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="lessTab">
+     <attribute name="title">
+      <string>1억원 미만 및 달러</string>
+     </attribute>
+    </widget>
+   </widget>
+   <zorder>moreLessTab</zorder>
+   <zorder>listTable</zorder>
+   <zorder>homeButton</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
